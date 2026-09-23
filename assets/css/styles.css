@@ -160,7 +160,9 @@ a{color:inherit}
 .wa-line a{color:var(--accent);font-weight:600}
 
 footer{text-align:center;padding:34px 20px 46px;color:var(--pencil);font-size:.92rem}
-footer .fine{font-family:var(--font-display);font-size:1.15rem;color:var(--ink)}
+footer .repeat{display:flex;align-items:center;justify-content:center;gap:14px}
+.repeat-sign{flex:none;width:.9em;height:1.8em;fill:var(--ink)}
+.repeat-sign:first-child{transform:scaleX(-1)} /* ב-RTL הראשון הוא הימני */
 
 /* ══ DESIGN PANEL (למחיקה בסוף) ══ */
 .dp-toggle{position:fixed;bottom:16px;left:16px;z-index:99;width:46px;height:46px;

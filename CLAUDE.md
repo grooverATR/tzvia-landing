@@ -14,19 +14,17 @@ Single-page Hebrew (RTL) landing page for Tzvia Gruber's piano lessons for women
 - `assets/css/styles.css` holds the design tokens as CSS variables on `:root` (`--accent`, `--overlay`, `--font-display`, `--wobble`, …). Fonts come from Google Fonts: Bellefair, Karantina, Assistant, Amatic SC.
 - `assets/js/script.js` contains three independent IIFE/handlers:
   1. **Playable staff:** builds the SVG notes of the opening of "Für Elise" into `#notesLayer` and plays them with the Web Audio API (a triangle plus a sine oscillator). Each `melody` entry is `[freq, Hebrew note name, staff y, isSharp]`. The y values follow the staff line positions in the SVG `viewBox="0 0 520 80"` (the comment maps F5=16 … A4=46). The staff box is forced to `direction:ltr` inside the RTL page.
-  2. **Lead form:** `#leadForm` posts to a Google Form through the hidden iframe `hidden_iframe`. The JS only swaps in `#formSuccess` after 400ms, and there is no real response handling.
+  2. **Lead form:** `#leadForm` posts to a Google Form ("פסנתר צביה", fields entry.823151790 name, entry.1418702409 phone, entry.54648334 background) through the hidden iframe `hidden_iframe`. The `<option>` values must match the Google Form choices exactly (hence `value="לא ניגנתי"` on the first one), or Google rejects the submission. The JS only swaps in `#formSuccess` after 400ms, and there is no real response handling.
   3. **Design panel:** a temporary tuning UI (the ⚙️ button) that live-edits the `--accent`, `--overlay` and `--font-display` CSS variables.
 
 ## Hosting
 
-GitHub Pages at `https://grooveratr.github.io/tzvia-piano/` (repo `grooverATR/tzvia-piano`). `canonical`, `og:url` and `og:image` in `<head>` hard-code this absolute URL (Open Graph needs absolute URLs), so update them if the repo or domain changes. `assets/img/og.jpg` (1200×630, cropped from `hero.jpg`) is the WhatsApp/Facebook preview image.
+GitHub Pages at `https://grooveratr.github.io/tzvia-landing/` (repo `grooverATR/tzvia-landing`). `canonical`, `og:url` and `og:image` in `<head>` hard-code this absolute URL (Open Graph needs absolute URLs), so update them if the repo or domain changes. `assets/img/og.jpg` (1200×630, cropped from `hero.jpg`) is the WhatsApp/Facebook preview image.
 
 ## Pending TODOs before publishing
 
 These are marked in the HTML/CSS comments:
 - **TODO-VIDEO**: replace the hero `<img>` with a muted, looping `<video class="hero-media">` (a short MP4, ~2–4MB). The CSS comment in `assets/css/styles.css` has the snippet.
-- **TODO-WA**: the placeholder WhatsApp number `972500000000` appears in two `wa.me` links.
-- **TODO-FORM**: `FORM_ID` and the placeholder `entry.1111111`, `entry.2222222` and `entry.3333333` field names must be replaced with the real Google Form IDs.
 - **TODO-PHOTO**: replace the `.avatar.placeholder` div in the about section with an `<img class="avatar">` (square, ~400×400).
 - **TODO-NAME**: personalize the "נעים להכיר" about text.
 - **Design panel removal**: delete the block between `DESIGN PANEL START/END` in the HTML, the `DESIGN PANEL SCRIPT` IIFE in `assets/js/script.js`, and the matching `.dp`/`.dp-toggle` styles in `assets/css/styles.css`.
