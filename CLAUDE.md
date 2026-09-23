@@ -8,7 +8,7 @@ Single-page Hebrew (RTL) landing page for Tzvia Gruber's piano lessons for women
 
 ## Files
 
-- `index.html` is the markup.
+- `index.html` is the markup. It links the CSS/JS with a cache-busting `?v=N` query. Bump it whenever `styles.css` or `script.js` changes, or browsers keep the stale file and mismatch the new HTML.
 - `assets/img/` holds images: `hero.jpg` (1536×1024) is the hero image, with `hero-800.jpg` as the mobile version via `srcset`. Future `hero.mp4` / `poster.jpg` go here too. `og.jpg` is the social preview and `favicon.svg` is the tab icon. The 2MB `ChatGPT Image*.png` source image is git-ignored.
 - `.nojekyll` makes GitHub Pages serve the files as-is, without Jekyll processing.
 - `assets/css/styles.css` holds the design tokens as CSS variables on `:root` (`--accent`, `--overlay`, `--font-display`, `--wobble`, …). Fonts come from Google Fonts: Bellefair, Karantina, Assistant, Amatic SC.
