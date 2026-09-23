@@ -17,10 +17,13 @@ Single-page Hebrew (RTL) landing page for Tzvia Gruber's piano lessons for women
   2. **Lead form:** `#leadForm` posts to a Google Form through the hidden iframe `hidden_iframe`. The JS only swaps in `#formSuccess` after 400ms, and there is no real response handling.
   3. **Design panel:** a temporary tuning UI (the ⚙️ button) that live-edits the `--accent`, `--overlay` and `--font-display` CSS variables.
 
+## Hosting
+
+GitHub Pages at `https://grooveratr.github.io/tzvia-piano/` (repo `grooverATR/tzvia-piano`). `canonical`, `og:url` and `og:image` in `<head>` hard-code this absolute URL (Open Graph needs absolute URLs), so update them if the repo or domain changes. `assets/img/og.jpg` (1200×630, cropped from `hero.jpg`) is the WhatsApp/Facebook preview image.
+
 ## Pending TODOs before publishing
 
 These are marked in the HTML/CSS comments:
-- **TODO-URL**: the site is hosted on GitHub Pages. `canonical`, `og:url` and `og:image` in `<head>` use the placeholder `https://USERNAME.github.io/tzvia-piano/`, which must become the real absolute URL (Open Graph needs absolute URLs). `assets/img/og.jpg` (1200×630, cropped from `hero.jpg`) is the WhatsApp/Facebook preview image.
 - **TODO-VIDEO**: replace the hero `<img>` with a muted, looping `<video class="hero-media">` (a short MP4, ~2–4MB). The CSS comment in `assets/css/styles.css` has the snippet.
 - **TODO-WA**: the placeholder WhatsApp number `972500000000` appears in two `wa.me` links.
 - **TODO-FORM**: `FORM_ID` and the placeholder `entry.1111111`, `entry.2222222` and `entry.3333333` field names must be replaced with the real Google Form IDs.
