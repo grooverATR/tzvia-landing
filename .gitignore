@@ -1,0 +1,7 @@
+# קובץ המקור של התמונה (2MB), לא נחוץ באתר
+assets/img/ChatGPT Image*.png
+
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
