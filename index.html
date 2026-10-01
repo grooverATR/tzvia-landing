@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Karantina:wght@300;400&family=Assistant:wght@300;400;600&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/styles.css?v=2">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
 </head>
 <body>
 
@@ -89,11 +89,20 @@
         בהתאמה מלאה לרמה ולטעם שלך, באווירה ביתית ורגועה.
       </p>
       <ul class="facts">
-        <li>שיעור שבועי של 45 דקות, בשעות הבוקר והצהריים</li>
+        <li>שיעור שבועי של 45 או 60 דקות, בשעות הבוקר והצהריים</li>
         <li>אצלי בבית בנגוהות</li>
         <li>לכל הרמות — גם אם מעולם לא נגעת בפסנתר</li>
-        <li>מתחילות בשיעור היכרות, בלי התחייבות</li>
+        <li>מתחילות בשיעור היכרות חינם</li>
       </ul>
+
+      <div class="prices">
+        <h3>מחיר מיוחד לפתיחת העונה</h3>
+        <dl>
+          <div><dt>שיעור 45 דק׳</dt><dd><s>150</s> <b>130 ₪</b></dd></div>
+          <div><dt>שיעור 60 דק׳</dt><dd><s>175</s> <b>160 ₪</b></dd></div>
+        </dl>
+        <p class="small">המחיר לשיעור · שיעור ההיכרות חינם וללא התחייבות</p>
+      </div>
     </div>
 
     <div class="card-form">
@@ -113,6 +122,13 @@
           <option value="לא ניגנתי">אף פעם לא ניגנתי</option>
           <option>למדתי בעבר</option>
           <option>מנגנת קצת לבד</option>
+        </select>
+
+        <label for="f-length">משך שיעור מועדף</label>
+        <select id="f-length" name="entry.372124515">
+          <option>עוד לא החלטתי</option>
+          <option>45 דקות</option>
+          <option>60 דקות</option>
         </select>
 
         <label for="f-about">קצת על עצמי (לא חובה)</label>

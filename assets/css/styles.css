@@ -123,6 +123,22 @@ a{color:inherit}
 }
 .facts li::before{content:"♪";color:var(--accent);font-size:.9rem}
 
+/* מחירון */
+.prices{margin-top:30px}
+.prices h3{
+  font-family:var(--font-hand);font-weight:700;font-size:1.7rem;
+  color:var(--accent);transform:rotate(-1deg);margin-bottom:6px;
+}
+.prices dl div{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:8px 2px;border-bottom:1px dashed var(--line);
+}
+.prices dt{font-size:1.05rem;color:#46423a}
+.prices dd{white-space:nowrap}
+.prices s{color:var(--pencil);font-size:.95rem;margin-inline-end:6px}
+.prices b{font-family:var(--font-hand);font-weight:700;font-size:1.6rem;color:var(--accent)}
+.prices .small{font-size:.92rem;color:var(--pencil);margin-top:8px}
+
 /* טופס — כרטיס במחברת */
 .card-form{
   background:#fff;padding:32px 30px 36px;
