@@ -30,10 +30,6 @@ a{color:inherit}
   color:#fff;overflow:hidden;isolation:isolate;
 }
 .hero-media{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;filter:brightness(.72) contrast(1.05)}
-/* TODO-VIDEO: להחליף את ה-div ב:
-   <video class="hero-media" autoplay muted loop playsinline poster="assets/img/poster.jpg">
-     <source src="assets/img/hero.mp4" type="video/mp4"></video>
-   MP4 קצר (8–12 שנ׳), בלי סאונד, ~2‑4MB. עדיף על GIF. */
 .hero-media.placeholder{
   background:
     radial-gradient(ellipse 70% 55% at 30% 25%, #4a4030aa, transparent 65%),
@@ -141,6 +137,7 @@ a{color:inherit}
 
 /* טופס — כרטיס במחברת */
 .card-form{
+  scroll-margin-top:20px;
   background:#fff;padding:32px 30px 36px;
   transform:rotate(.4deg);
   box-shadow:0 8px 22px #00000012;position:relative;
@@ -178,18 +175,3 @@ a{color:inherit}
 footer{text-align:center;padding:34px 20px 46px;color:var(--pencil);font-size:.92rem}
 footer .repeat{display:flex;align-items:center;justify-content:center;gap:14px}
 .repeat-sign{flex:none;width:.9em;height:1.8em;fill:var(--ink)}
-/* ══ DESIGN PANEL (למחיקה בסוף) ══ */
-.dp-toggle{position:fixed;bottom:16px;left:16px;z-index:99;width:46px;height:46px;
-  border-radius:50%;border:1px solid var(--line);cursor:pointer;font-size:1.15rem;
-  background:#fff;box-shadow:0 4px 14px #00000018}
-.dp{position:fixed;bottom:72px;left:16px;z-index:99;width:250px;background:#fff;
-  border:1px solid var(--line);box-shadow:0 14px 40px #00000022;padding:16px;display:none;font-size:.88rem}
-.dp.open{display:block}
-.dp h4{font-size:.76rem;letter-spacing:.08em;color:var(--pencil);margin:12px 0 8px}
-.dp h4:first-child{margin-top:0}
-.dp .row{display:flex;gap:8px;flex-wrap:wrap}
-.dp .swatch{width:34px;height:34px;border-radius:50%;cursor:pointer;border:2px solid transparent}
-.dp .swatch.sel{border-color:var(--ink)}
-.dp button.opt{padding:.3em .8em;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:.85rem}
-.dp button.opt.sel{border-color:var(--ink);font-weight:600}
-.dp input[type=range]{width:100%}

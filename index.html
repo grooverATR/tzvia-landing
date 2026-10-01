@@ -15,7 +15,7 @@
 <meta property="og:locale" content="he_IL">
 <meta property="og:site_name" content="צביה גרובר · פסנתר">
 <meta property="og:title" content="שעה בשבוע שהיא רק שלך · שיעורי פסנתר בנגוהות">
-<meta property="og:description" content="שיעורי פסנתר לנשים ונערות אצל צביה גרובר, בשעות הבוקר ובאווירה ביתית. מתחילות בשיעור היכרות, בלי התחייבות.">
+<meta property="og:description" content="שיעורי פסנתר לנשים ונערות אצל צביה גרובר, בשעות הבוקר ובאווירה ביתית. מחיר מיוחד לפתיחת העונה ושיעור היכרות חינם.">
 <meta property="og:url" content="https://grooveratr.github.io/tzvia-landing/">
 <meta property="og:image" content="https://grooveratr.github.io/tzvia-landing/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -23,16 +23,11 @@
 <meta property="og:image:alt" content="נגינה בפסנתר">
 <meta name="twitter:card" content="summary_large_image">
 
-<!--
-  TODO לפני פרסום: TODO-VIDEO, TODO-NAME, TODO-PHOTO
-  פאנל עיצוב ⚙️ — למחוק בסוף (מסומן DESIGN PANEL)
--->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Karantina:wght@300;400&family=Assistant:wght@300;400;600&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Assistant:wght@300;400;600&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles.css?v=4">
 </head>
 <body>
 
@@ -66,7 +61,7 @@
     </div>
 
     <div class="cta-row">
-      <a class="btn-ink" href="#contact">לשיעור היכרות</a>
+      <a class="btn-ink" href="#lead">לשיעור היכרות</a>
       <a class="link-hand" href="https://wa.me/972547185999?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%A6%D7%91%D7%99%D7%94%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%AA%D7%A2%D7%A0%D7%99%D7%99%D7%A0%D7%AA%20%D7%91%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%20%D7%A4%D7%A1%D7%A0%D7%AA%D7%A8" target="_blank" rel="noopener">או כתבי לי בוואטסאפ ←</a>
     </div>
   </div>
@@ -77,17 +72,16 @@
   <div class="wrap">
     <div class="about">
       <div class="about-head">
-        <img class="avatar" src="assets/img/profile.jpg" alt="צביה גרובר" width="104" height="104">
+        <img class="avatar" src="assets/img/profile.jpg?v=2" alt="צביה גרובר" width="104" height="104">
         <h2>נעים להכיר</h2>
       </div>
-      <!-- TODO-NAME + נוסח אישי קצר -->
       <p>
         אני צביה גרובר, מורה לפסנתר בנגוהות. מלמדת את כל הסגנונות — קלאסי, ישראלי, ג׳אז ופופ —
         בהתאמה מלאה לרמה ולטעם שלך, באווירה ביתית ורגועה.
       </p>
       <ul class="facts">
         <li>שיעור שבועי של 45 או 60 דקות, בשעות הבוקר והצהריים</li>
-        <li>אצלי בבית בנגוהות</li>
+        <li>בביתי שבנגוהות</li>
         <li>לכל הרמות — גם אם מעולם לא נגעת בפסנתר</li>
         <li>מתחילות בשיעור היכרות חינם</li>
       </ul>
@@ -102,7 +96,7 @@
       </div>
     </div>
 
-    <div class="card-form">
+    <div class="card-form" id="lead">
       <h3>נשמע נהדר! תחזרי אליי ←</h3>
       <p class="small">השאירי פרטים ואחזור אלייך לתיאום שיעור היכרות.</p>
       <form id="leadForm"
@@ -154,18 +148,6 @@
   </p>
 </footer>
 
-<!-- ══ DESIGN PANEL START (למחיקה בסוף) ══ -->
-<button class="dp-toggle" id="dpToggle" aria-label="פאנל עיצוב">⚙️</button>
-<div class="dp" id="dp">
-  <h4>צבע הדיו</h4>
-  <div class="row" id="dpInks"></div>
-  <h4>כהות הווידאו</h4>
-  <input type="range" id="dpOverlay" min="20" max="80" value="40">
-  <h4>פונט כותרות</h4>
-  <div class="row" id="dpFonts"></div>
-</div>
-<!-- ══ DESIGN PANEL END ══ -->
-
-<script src="assets/js/script.js?v=2"></script>
+<script src="assets/js/script.js?v=3"></script>
 </body>
 </html>

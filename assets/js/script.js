@@ -85,26 +85,3 @@ document.getElementById('leadForm').addEventListener('submit',function(){
     document.getElementById('formSuccess').style.display='block';
   },400);
 });
-
-/* ══ DESIGN PANEL SCRIPT (למחיקה בסוף) ══ */
-(function(){
-  const inks=[{n:'דיו כחול',c:'#2C4770'},{n:'יין',c:'#6E2B3A'},{n:'יער',c:'#31523F'},{n:'גרפיט',c:'#3C3A35'}];
-  const fonts=[{n:'Bellefair',v:"'Bellefair', serif"},{n:'Karantina',v:"'Karantina', serif"}];
-  const root=document.documentElement.style;
-  function build(el,arr,render,apply){
-    arr.forEach((item,i)=>{
-      const b=render(item);
-      if(i===0)b.classList.add('sel');
-      b.onclick=()=>{apply(item);el.querySelectorAll('.sel').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');};
-      el.appendChild(b);
-    });
-  }
-  build(document.getElementById('dpInks'),inks,
-    i=>{const b=document.createElement('button');b.className='swatch';b.title=i.n;b.style.background=i.c;return b;},
-    i=>root.setProperty('--accent',i.c));
-  build(document.getElementById('dpFonts'),fonts,
-    f=>{const b=document.createElement('button');b.className='opt';b.textContent=f.n;return b;},
-    f=>root.setProperty('--font-display',f.v));
-  document.getElementById('dpOverlay').oninput=e=>root.setProperty('--overlay',e.target.value/100);
-  document.getElementById('dpToggle').onclick=()=>document.getElementById('dp').classList.toggle('open');
-})();
