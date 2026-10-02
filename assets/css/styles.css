@@ -133,6 +133,7 @@ a{color:inherit}
 .prices dd{white-space:nowrap}
 .prices s{color:var(--pencil);font-size:.95rem;margin-inline-end:6px}
 .prices b{font-family:var(--font-hand);font-weight:700;font-size:1.6rem;color:var(--accent)}
+.prices .promise{font-size:1rem;font-weight:600;color:var(--accent);margin:12px 0 0}
 .prices .small{font-size:.92rem;color:var(--pencil);margin-top:8px}
 
 /* טופס — כרטיס במחברת */
